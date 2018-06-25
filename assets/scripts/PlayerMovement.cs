@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum DIRECCION { FRONT, BACK , LEFT , RIGHT}
 
-public class controller : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     DIRECCION dir;
     Vector3 pos;
