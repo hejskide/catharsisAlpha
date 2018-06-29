@@ -1,2 +1,7 @@
--mejorar la rotacion del personaje
+Correcciones:	
+	
+	mejorar la rotacion del personaje 
 	efecto smooth a la camara
+
+- 
+
