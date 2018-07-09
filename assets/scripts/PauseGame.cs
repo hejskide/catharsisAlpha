@@ -6,8 +6,8 @@ using UnityEngine.Experimental.UIElements;
 public class PauseGame : MonoBehaviour
 {
 
-	public GameObject pauseMenuUI;
-	public GameObject buttonPause;
+    public GameObject pauseMenuUI;
+    public GameObject uiPanel;
 	public static bool gameIsPaused = false;
 
 	// Update is called once per frame
@@ -25,7 +25,7 @@ public class PauseGame : MonoBehaviour
 	public void Resume ()
 	{
 		pauseMenuUI.SetActive (false);
-		buttonPause.SetActive (true);
+        uiPanel.SetActive (true);
 		Time.timeScale = 1;
 		gameIsPaused = false;
 	}
@@ -33,7 +33,7 @@ public class PauseGame : MonoBehaviour
 	public void Pause ()
 	{
 		pauseMenuUI.SetActive (true);
-		buttonPause.SetActive (false);
+        uiPanel.SetActive (false);
 		Time.timeScale = 0;
 		gameIsPaused = true;
 	}
