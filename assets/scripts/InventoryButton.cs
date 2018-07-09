@@ -6,6 +6,23 @@ public class InventoryButton : MonoBehaviour {
 
     public GameObject inventory;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (inventory.gameObject.activeInHierarchy == true)
+            {
+                Close();
+            }
+            else
+            {
+                Open();
+            }
+
+        }
+    }
+
+
     public void buttonClick ()
     {
         if (inventory.gameObject.activeInHierarchy == true)
